@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container1 {
+    border: 0px solid #6577b8;
+    padding-bottom: 700px;
+    background-color: beige;
+}
+
+.heading1 {
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    border: 0px solid #6577b8;
+    border-radius: 15px;
+    background-color: #6577b8;
+    width: 750px;
+    text-align: center;
+    padding: 50px;
+}
+
+.quizstart {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #6577b8;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .heading1 {
+        position: absolute;
+        left: 15px;
+        top: 120px;
+        border: 0px solid #6577b8;
+        border-radius: 15px;
+        background-color: #6577b8;
+        width: 330px;
+        text-align: center;
+        padding: 50px;
+    }
+}
