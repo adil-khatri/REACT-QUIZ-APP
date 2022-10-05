@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    gap: 3rem;
+    transition: all .5s linear;
+}
+
+.grid-three-column{
+    grid-template-columns:repeat(3 , 1fr);
+}
+
+.grid-one-column{
+    grid-template-columns:repeat(1 , 1fr);
+}
+
+/* *******************************************
+Contact Details Section Start
+******************************************* */
+
+.common-heading{
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 2.4rem;
+    transition: all 0.7s linear;
+}
+.common-heading::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    width: 1rem;
+    height: 1rem;
+    background-color:#8490FF;
+    border-radius:8px;
+}
+.common-heading::after{
+    content: "";
+    position: absolute;
+    top: 123%;
+    left: 1.5px;
+    min-width: 10rem;
+    height: 0.3rem;
+    background-color:#8490FF;
+}
+
+.container-details{
+    padding: 2rem 8rem;
+    transition: all .5s linear;
+}
+
+.details{
+    /* border: 2px solid lightgray; */
+    background-color: #F6F5FC;
+    padding: 0.5rem 1rem;
+    transition:all 0.5s linear;
+}
+
+
+.details img{
+    width: 30px;
+    height: 30px;
+}
+
+.details a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: grey;
+}
+
+/* *******************************************
+Contact Section Start
+******************************************* */
+.contact-heading{
+    margin-bottom: 2.7rem;
+}
+
+.container-contact{
+    background-color: #F6F5FC;
+    margin: 0 15rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    padding-bottom: 0.5rem;
+    /* box-shadow: 1px 1px 20px 1px rgb(0, 140, 255); */
+    box-shadow: .5px .5px 5px 1px black;
+    transition: all .5s linear;
+}
+.contact-form input,
+.contact-form textarea{
+    padding: 0.5rem 1rem;
+    border: none;
+    border: 1px solid lightgrey;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    outline: none;
+}
+
+.contact-form input:focus{
+    border: 2px solid #715CF9; 
+}
+.contact-form textarea:focus{
+    border: 2px solid #715CF9;
+}
+
+.contact-form input[type="submit"]{
+    max-width: 20%; 
+    background-color: #715CF9;
+    color: white;
+    font-weight: 300;
+    transition: all .5s linear;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* *********************************************
+Making Responsive Design
+********************************************* */
+@media only screen and (max-width: 1400px)
+{
+    .common-heading{
+        color: yellow;
+    }
+
+    .container-details{
+        padding: 2rem 7rem;
+    }
+
+    .container-contact{
+        background-color: #F6F5FC;
+        margin: 0 11rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+    .container-contact .grid{
+        gap:1.5rem;
+    }
+}
+@media only screen and (max-width: 1100px)
+{
+    .common-heading{
+        color:pink;
+    }
+
+    .container-details{
+        padding: 2rem 4rem;
+    }
+    .common-heading{
+        margin-left: 2.8rem;
+    }
+    .container-contact{
+        background-color: #F6F5FC;
+        margin: 0 7rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+}
+@media only screen and (max-width: 1000px)
+{
+    .common-heading{
+        color:blue;
+    }
+
+    .container-details{
+        padding: 2rem 2rem;
+    }
+
+    .common-heading{
+        margin-left: 2rem;
+    }
+
+    .container-contact{
+        background-color: #F6F5FC;
+        margin: 0 5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .container-contact .grid{
+        gap:1rem;
+    }
+
+    .contact-form input[type="submit"]{
+        max-width: 25%; 
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    .common-heading{
+        color:black;
+        font-size: 2.2rem;
+    }
+
+    .contact-form input[type="submit"]{
+        max-width: 28%; 
+    }
+}
+
+@media only screen and (max-width: 750px)
+{
+    .common-heading{
+        color:red;
+    }
+    .container-contact{
+        padding: 2rem;
+        padding-bottom: 0.5rem;
+    }
+    .div-form-btn
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form input[type="submit"]{
+        max-width: 38%; 
+    }
+
+    .contact-form .grid{
+        grid-template-columns:repeat(1 , 1fr);
+    }
+}
+@media only screen and (max-width: 650px)
+{
+    .common-heading{
+        color:lightgreen;
+    }
+
+    .container-details{
+        grid-template-columns:repeat(1 , 1fr);
+    }
+
+    .container-details{
+        padding: 2rem 4rem;
+    }
+
+    .common-heading{
+        width: 100%;
+        text-align: center;
+        margin-left:0 ;
+    }
+
+    .common-heading::before{
+        top: 110%;
+        left: 36%;
+        width: .8rem;
+        height: .8rem;
+    }
+    .common-heading::after{
+        top: 123.4%;
+        left: 37%;
+        height: .2rem;
+        min-width: 9rem;
+    }
+    .contact-form input[type="submit"]{
+        max-width: 55%; 
+    }
+}
+@media only screen and (max-width: 560px){
+    .common-heading{
+        color:red;
+    }
+
+    .common-heading::before{
+        top: 110%;
+        left: 35%;
+    }
+    .common-heading::after{
+        top: 123%;
+        left: 35%;
+    }
+    .contact-form input[type="submit"]{
+        max-width: 55%; 
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .common-heading{
+        color:black;
+    }
+
+    .common-heading::before{
+        top: 110%;
+        left: 33%;
+    }
+    .common-heading::after{
+        top: 123%;
+        left: 34%;
+    }
+
+    .contact-form input[type="submit"]{
+        max-width: 55%; 
+    }
+}
