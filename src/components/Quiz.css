@@ -1,185 +1,190 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container1 {
-    border: 1px solid black;
-    padding-bottom: 800px;
-    background-color: #dee2f0;
+  border: 1px solid black;
+  padding-bottom: 800px;
+  background-color: #dee2f0;
 }
 
 .heading {
-    position: absolute;
-    left: 650px;
-    top: 125px;
-    font-size: 40px;
-    font-weight: bold;
+  position: absolute;
+  left: 650px;
+  top: 125px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .bigtext {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .question-section {
-    border: 0px solid #6577b8;
-    right: 650px;
-    position: absolute;
-    left: 80px;
-    top: 30px;
-    font-size: 25px;
-    padding-bottom: 5px;
+  border: 0px solid #6577b8;
+  right: 650px;
+  position: absolute;
+  left: 80px;
+  top: 30px;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 
 .container {
-    position: absolute;
-    top: 200px;
-    left: 85px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid black;
-    right: 100px;
-    border-radius: 15px;
-    background: #6e81c4;
-    box-shadow: inset 9px 9px 16px #6577b4, inset -9px -9px 16px #778bd4;
+  position: absolute;
+  top: 200px;
+  left: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid black;
+  right: 100px;
+  padding-left: 29vw;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
 
 /* for answer buttons */
 
 .answer-section {
     border: 0px solid #6577b8;
-    right: 50px;
-    margin-left: 500px;
+    /* right: 50px; */
+    /* margin-left: 500px; */
     display: flex;
     flex-direction: column;
     padding: 20px 20px 20px 0px;
 }
 
 .btn2 {
-    font-size: 20px;
-    padding: 0 150px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  font-size: 20px;
+  padding: 0 150px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .btn2:hover {
-    background-color: black !important;
-    color: #56659c;
+  background-color: black !important;
+  color: #56659c;
 }
 
 .score-section {
-    padding: 20px 0px;
-    font-size: 25px;
+  padding: 20px 0px;
+  font-size: 25px;
 }
 
 .previous-question {
-    position: absolute;
-    top: 150px;
-    left: 80px;
-    border-radius: 5px;
-    padding: 3px;
-    color: #6577b8;
-    background-color: black;
-    font-size: 20px;
-    width: 50px;
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  border-radius: 5px;
+  padding: 3px;
+  color: #6577b8;
+  background-color: black;
+  font-size: 20px;
+  width: 50px;
 }
 
 .submit-question {
-    position: absolute;
-    top: 150px;
-    left: 135px;
-    border-radius: 5px;
-    padding: 3px;
-    color: #6577b8;
-    background-color: black;
-    font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 135px;
+  border-radius: 5px;
+  padding: 3px;
+  color: #6577b8;
+  background-color: black;
+  font-size: 20px;
 }
 
 .next-question {
+  position: absolute;
+  top: 150px;
+  left: 211px;
+  border-radius: 5px;
+  padding: 3px;
+  color: #6577b8;
+  background-color: black;
+  font-size: 20px;
+  width: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
     position: absolute;
-    top: 150px;
-    left: 211px;
+    left: 70px;
+    top: 110px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .container {
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:0;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    right: 10px;
+    border-radius: 15px;
+  }
+  .question-section {
+    border: 0px solid #6577b8;
+    right: 50px;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    font-size: 23px;
+    justify-content: center;
+    text-align: left;
+  }
+  .answer-section {
+    
+        border: 0px solid black;
+        /* margin-left: 165px; */
+        display: flex;
+        flex-direction: column;
+        padding: 226px 0px 20px 20px
+  }
+  .btn2 {
+    /* margin-right: 205px; */
+    font-size: 20px;
+    padding: 0 100px;
+  }
+  .btn2:hover {
+    background-color: black !important;
+    color: #56659c;
+  }
+  .previous-question {
+    position: absolute;
+    top: 170px;
+    left: 90px;
     border-radius: 5px;
     padding: 3px;
     color: #6577b8;
     background-color: black;
-    font-size: 20px;
-    width: 50px;
-}
-
-@media screen and (max-width: 1024px) {
-    .heading {
-        position: absolute;
-        left: 70px;
-        top: 110px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .container {
-        position: absolute;
-        top: 160px;
-        left: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #6577b8;
-        right: 10px;
-        border-radius: 15px;
-        background: #6577b8;
-        box-shadow: inset 31px 31px 62px #56659c, inset -31px -31px 62px #7489d4;
-    }
-    .question-section {
-        border: 0px solid #6577b8;
-        right: 50px;
-        position: absolute;
-        left: 50px;
-        top: 20px;
-        font-size: 23px;
-        justify-content: center;
-        text-align: left;
-    }
-    .answer-section {
-        border: 0px solid black;
-        margin-left: 165px;
-        display: flex;
-        flex-direction: column;
-        padding: 220px 0px 20px 40px;
-    }
-    .btn2 {
-        margin-right: 205px;
-        font-size: 20px;
-        padding: 0 100px;
-    }
-    .btn2:hover {
-        background-color: black !important;
-        color: #56659c;
-    }
-    .previous-question {
-        position: absolute;
-        top: 170px;
-        left: 90px;
-        border-radius: 5px;
-        padding: 3px;
-        color: #6577b8;
-        background-color: black;
-    }
-    .submit-question {
-        position: absolute;
-        top: 170px;
-        left: 145px;
-        border-radius: 5px;
-        padding: 3px;
-        color: #6577b8;
-        background-color: black;
-    }
-    .next-question {
-        position: absolute;
-        top: 170px;
-        left: 221px;
-        border-radius: 5px;
-        padding: 3px;
-        color: #6577b8;
-        background-color: black;
-    }
+  }
+  .submit-question {
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    border-radius: 5px;
+    padding: 3px;
+    color: #6577b8;
+    background-color: black;
+  }
+  .next-question {
+    position: absolute;
+    top: 170px;
+    left: 221px;
+    border-radius: 5px;
+    padding: 3px;
+    color: #6577b8;
+    background-color: black;
+  }
 }

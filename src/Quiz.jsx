@@ -123,10 +123,15 @@ const Service = () => {
 
     // For Submit Button
     const handleSubmitClickButton = (isCorrect) => {
+        if(currentQuestion==questions.length-1){
         if(isCorrect===true){
             setScore(score + 1);
         }
         setShowScore(true);
+    }
+    else{
+        alert("Please complete all the answers");
+    }
     }
 
     // for next button
