@@ -8,8 +8,10 @@
 
 .container1 {
     border: 0px solid #6577b8;
-    padding-bottom: 700px;
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading1 {
@@ -19,8 +21,12 @@
     border: 0px solid #6577b8;
     border-radius: 15px;
     background-color: #6577b8;
-    width: 750px;
+    width: 80vw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 50px;
 }
 
