@@ -10,11 +10,12 @@
     border: 0px solid #6577b8;
     padding-bottom: 700px;
     background-color: beige;
+
 }
 
 .heading1 {
     position: absolute;
-    left: 50px;
+    left: 25%;
     top: 120px;
     border: 0px solid #6577b8;
     border-radius: 15px;
@@ -28,9 +29,14 @@
     margin-top: 10px;
     border-radius: 10px;
     padding: 5px;
+    margin-right: 35%;
     text-decoration: none;
     color: #6577b8;
     background-color: black;
+}
+
+.link{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

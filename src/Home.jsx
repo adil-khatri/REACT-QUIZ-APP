@@ -20,7 +20,7 @@ function Home()  {
             <>
             <div className="container1">
             <h1 className="heading1">Hello!! You can start your quiz here
-            <button className="quizstart"><a href="/quiz">Start Quiz</a> 
+            <button className="quizstart"><a className="link" href="/quiz">Start Quiz</a> 
               </button>
             </h1>
             </div>
